@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Lotus Shop</h1>
+            <form>
+                <input type="search" placeholder="Busque no site" id="pesquisar" name="pesquisar">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <div class="botao-menu">
+            <button type="button">Abrir Menu</button>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    Comidas
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Tomate</a>
+                        </li>
+                        <li>
+                            <a href="#">Banana</a>
+                        </li>
+                        <li>
+                            <a href="#">Queijo</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Novidades
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Promoções</a>
+                        </li>
+                        <li>
+                            <a href="#">Revista</a>
+                        </li>
+                        <li>
+                            <a href="#">Mascote</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <h2>Sobre nós</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="./imagens/mercado.jpg" alt="">
+                        <h3>
+                            Somos um tipico mercadinho brasileiro com os preços em conta e serviço de qualidade para você e sua familia comprar
+                        </h3>
+                    </a>
+                </article>
+            </section>
+            <section>
+                <h2>Ultimas noticias</h2>
+                <div class="noticias">
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="./imagens/bananas.jpg" alt="">
+                            <h3>
+                                Temos bananas caturras a venda por apenas R$ 2,99Kg
+                            </h3>
+                            <button type="submit" name="button" id="button" class="button">Eu quero</button>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="./imagens/tomates.jpg" alt="">
+                            <h3>
+                                Temos tomates italianos a venda por apenas R$9,99Kg
+                            </h3>
+                            <button type="submit" name="button" id="button" class="button">Eu quero</button>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="./imagens/queijo.jpg" alt="">
+                            <h3>
+                                Temos queijo artesanal a venda por apenas: R$7,99Kg
+                            </h3>
+                            <button type="submit" name="button" id="button" class="button">Eu quero</button>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <section class="novidades">
+                <h2>Novidades</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="./imagens/logo-carrinho.jpg" alt="">
+                        <h3>
+                            Atualizamos nossa logo marca
+                        </h3>
+                    </a>
+                </article>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="./imagens/carrinhopng.png" alt="">
+                        <h3>
+                            Atualizamos a nossa mascote
+                        </h3>
+                    </a>
+                </article>
+            </section>
+        </aside>
+    </div>
+    <footer>
+        &copy;Lotus Shop - Todos os direitos reservados desde 2024
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.botao-menu button').click(function(){
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
